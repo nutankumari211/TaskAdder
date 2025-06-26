@@ -40,8 +40,6 @@ The application will be available at http://localhost:3000
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
 
 ## Project Structure
 
@@ -182,46 +180,4 @@ The application uses Vite for fast development and optimized builds. The build p
 ## Deployment
 
 ### Build for Production
-```bash
 npm run build
-```
-
-### Deploy to Vercel
-1. Connect your GitHub repository to Vercel
-2. Configure build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-3. Set environment variables
-4. Deploy
-
-### Deploy to Netlify
-1. Connect your GitHub repository to Netlify
-2. Configure build settings:
-   - Build Command: `npm run build`
-   - Publish Directory: `dist`
-3. Set environment variables
-4. Deploy
-
-## Browser Support
-
-The application supports:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Performance
-
-- Code splitting for optimal loading
-- Lazy loading of components
-- Optimized bundle size
-- Fast refresh during development
-- Production optimizations
-
-## Accessibility
-
-- Semantic HTML structure
-- Keyboard navigation support
-- Screen reader compatibility
-- Focus management
-- ARIA labels and descriptions 
