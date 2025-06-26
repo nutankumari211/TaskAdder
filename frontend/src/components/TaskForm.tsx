@@ -61,82 +61,55 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onSubmit, onCancel }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-      <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-        <div className="mt-3">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">
-            {task ? 'Edit Task' : 'Create New Task'}
-          </h3>
-          <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-            <div>
-              <label htmlFor="taskName" className="block text-sm font-medium text-gray-700">
-                Task Name *
-              </label>
-              <input
-                type="text"
-                id="taskName"
-                name="taskName"
-                required
-                className={`input-field mt-1 ${errors.taskName ? 'border-red-500' : ''}`}
-                placeholder="Enter task name"
-                value={formData.taskName}
-                onChange={handleChange}
-              />
-              {errors.taskName && (
-                <p className="text-red-500 text-xs mt-1">{errors.taskName}</p>
-              )}
-            </div>
-
-            <div>
-              <label htmlFor="description" className="block text-sm font-medium text-gray-700">
-                Description
-              </label>
-              <textarea
-                id="description"
-                name="description"
-                rows={3}
-                className="input-field mt-1"
-                placeholder="Enter task description"
-                value={formData.description}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="dueDate" className="block text-sm font-medium text-gray-700">
-                Due Date *
-              </label>
-              <input
-                type="date"
-                id="dueDate"
-                name="dueDate"
-                required
-                className={`input-field mt-1 ${errors.dueDate ? 'border-red-500' : ''}`}
-                value={formData.dueDate}
-                onChange={handleChange}
-              />
-              {errors.dueDate && (
-                <p className="text-red-500 text-xs mt-1">{errors.dueDate}</p>
-              )}
-            </div>
-
-            <div className="flex justify-end space-x-3 pt-4">
-              <button
-                type="button"
-                onClick={onCancel}
-                className="btn-secondary"
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                className="btn-primary"
-              >
-                {task ? 'Update Task' : 'Create Task'}
-              </button>
-            </div>
-          </form>
-        </div>
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-40 flex items-center justify-center z-50">
+      <div className="w-full max-w-lg bg-white rounded-2xl p-10 md:p-14 flex flex-col items-center">
+        <h3 className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">
+          {task ? 'Edit Task' : 'Add Task'}
+        </h3>
+        <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6" noValidate>
+          <input
+            type="text"
+            id="taskName"
+            name="taskName"
+            required
+            className={`w-full bg-gray-100 rounded-lg px-4 py-3 text-base placeholder-gray-500 focus:outline-none ${errors.taskName ? 'border border-red-500' : ''}`}
+            placeholder="Enter Task Name"
+            value={formData.taskName}
+            onChange={handleChange}
+          />
+          <textarea
+            id="description"
+            name="description"
+            rows={2}
+            className="w-full bg-gray-100 rounded-lg px-4 py-3 text-base placeholder-gray-500 focus:outline-none resize-none"
+            placeholder="Description"
+            value={formData.description}
+            onChange={handleChange}
+          />
+          <input
+            type="date"
+            id="dueDate"
+            name="dueDate"
+            required
+            className={`w-full bg-gray-100 rounded-lg px-4 py-3 text-base placeholder-gray-500 focus:outline-none ${errors.dueDate ? 'border border-red-500' : ''}`}
+            placeholder="Date Picker"
+            value={formData.dueDate}
+            onChange={handleChange}
+          />
+          <button
+            type="submit"
+            className="w-32 mx-auto mt-2 bg-[#233BA9] hover:bg-[#1a2d7c] text-white font-semibold rounded-full py-2 text-lg transition-colors"
+          >
+            {task ? 'Save' : 'Save'}
+          </button>
+        </form>
+        <button
+          type="button"
+          onClick={onCancel}
+          className="mt-6 text-base text-black hover:underline focus:outline-none"
+        >
+          Cancel
+        </button>
       </div>
     </div>
   );
