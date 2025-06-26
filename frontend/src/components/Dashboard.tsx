@@ -9,7 +9,7 @@ import ActionMenu from "./ActionMenu";
 const PAGE_SIZE = 5;
 
 const Dashboard: React.FC = () => {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
   const [showTaskForm, setShowTaskForm] = useState(false);
