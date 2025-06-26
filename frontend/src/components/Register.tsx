@@ -65,18 +65,10 @@ const Register: React.FC = () => {
   return (
     <div className="min-h-screen w-full flex items-stretch bg-gradient-to-br from-blue-100 via-blue-300 to-blue-500">
       {/* Left: Logo and marketing text */}
-      <div>
-        <img src="logo.png" alt="Logo" className="h-[200px] mb-20 mt-5 ml-12" />
-        <div className="ml-12 mt-32">
-          <h1 className="text-3xl font-bold mb-4">
-            Join 1000<sup>+</sup> Businesses
-            <br />{" "}
-            <span className="text-yellow-300">
-              Powering Growth with Lemonpay!
-            </span>
-          </h1>
-          <p className="text-lg">Your success is our focus</p>
-        </div>
+      <div className="hidden md:flex flex-col justify-center items-start w-1/2 px-12 py-8">
+        <img src="/lemonpay-logo.png" alt="Logo" className="h-20 mb-8" />
+        <h1 className="text-3xl font-bold mb-4">Join 1000<sup>+</sup> Businesses<br/><span className="text-yellow-300">Powering Growth with Lemonpay!</span></h1>
+        <p className="text-lg text-gray-800">Your success is our focus</p>
       </div>
       {/* Right: Signup form */}
       <div className="flex flex-1 items-center justify-center px-4 py-8">
