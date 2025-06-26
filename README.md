@@ -46,8 +46,8 @@ cd task-management-app
 
 
 ### 2. Backend Setup
-cd backend
-npm install
+1. cd backend
+2. npm install
 
 
 Create a `.env` file in the backend directory:
@@ -59,12 +59,11 @@ NODE_ENV=development
 ```
 
 ### 3. Frontend Setup
-cd ../frontend
-npm install
+1. cd frontend
+2. npm install
 
 ### 4. Start the Application
 
-#### Development Mode
 
 **Backend:**
 cd backend
