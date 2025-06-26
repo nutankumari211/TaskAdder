@@ -2,7 +2,7 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) task management application with user authentication and CRUD operations for tasks.
 
-
+## deployed link - https://papaya-piroshki-768095.netlify.app/
 
 ### MOBILE VIEW UI -> Login , Register, Tasks
 ![image](https://github.com/user-attachments/assets/feb1604b-d685-46b2-a403-c3b2b3028a9d)
