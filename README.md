@@ -146,6 +146,34 @@ task-management-app/
 - Due date highlighting (overdue, due soon, on time)
 
 
+### MOBILE VIEW UI
+![image](https://github.com/user-attachments/assets/feb1604b-d685-46b2-a403-c3b2b3028a9d)
+![image](https://github.com/user-attachments/assets/feb1604b-d685-46b2-a403-c3b2b3028a9d)
+
+![image](https://github.com/user-attachments/assets/ce2f9f89-be78-41bc-abf4-8d1a4b34c2ef)
+![image](https://github.com/user-attachments/assets/ce2f9f89-be78-41bc-abf4-8d1a4b34c2ef)
+
+![image](https://github.com/user-attachments/assets/1821a72c-92f6-4174-ae38-e8b6550d5efb)
+![image](https://github.com/user-attachments/assets/1821a72c-92f6-4174-ae38-e8b6550d5efb)
+
+
+### DESKTOP VIEW UI
+![image](https://github.com/user-attachments/assets/5f47212e-0a1e-4a7e-b84b-d9e14f163902)
+![image](https://github.com/user-attachments/assets/5f47212e-0a1e-4a7e-b84b-d9e14f163902)
+
+
+![image](https://github.com/user-attachments/assets/09e22d20-a0ef-4bc0-891f-117b990283d5)
+![image](https://github.com/user-attachments/assets/09e22d20-a0ef-4bc0-891f-117b990283d5)
+
+
+![image](https://github.com/user-attachments/assets/329a6a79-3704-4fd0-a29c-55e3010810de)
+![image](https://github.com/user-attachments/assets/329a6a79-3704-4fd0-a29c-55e3010810de)
+
+
+
+
+
+
 
 ## License
 
